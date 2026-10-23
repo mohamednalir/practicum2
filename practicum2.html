@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Peak Frost</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: #eef6f0;
+            color: #2f3e2e;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e5631, #4c8c4a);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4em;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: #2f3e2e;
+            text-align: center;
+            padding: 14px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #eef6f0;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #a3d9a5;
+        }
+
+        section {
+            background-color: white;
+            margin: 25px auto;
+            padding: 25px;
+            width: 85%;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        section h2 {
+            color: #1e5631;
+            border-bottom: 2px solid #a3d9a5;
+            padding-bottom: 8px;
+        }
+
+        img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 8px;
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        footer {
+            background-color: #1e5631;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Peak Frost</h1>
+        <p>Your basecamp for crisp alpine air, untouched powder, and epic mountain adventures through HTML5 multimedia</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#audio">Audio</a>
+        <a href="#video">Video</a>
+        <a href="#pdf">PDF</a>
+        <a href="#map">Location</a>
+    </nav>
+
+    <!-- Banner -->
+    <section id="home">
+        <h2>Welcome</h2>
+
+        <img src="wp5561684-mountains-landscape-4k-wallpapers.jpg" alt="Nature Banner">
+
+        <p>
+            This webpage demonstrates the use of HTML5 multimedia
+            elements such as audio, video, PDF, YouTube and Google Maps —
+            now with a nature and travel theme.
+        </p>
+    </section>
+
+    <!-- Audio -->
+    <section id="audio">
+        <h2>Audio</h2>
+
+        <p>Listen to a calming melody:</p>
+
+        <audio controls>
+            <source src="ReelAudio-34930.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Local Video -->
+    <section id="video">
+        <h2>Video</h2>
+
+        <video controls width="700">
+            <source src="Video-48204.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- PDF -->
+    <section id="pdf">
+        <h2>PDF Document</h2>
+
+        <iframe src="funny_nature_cartoons.pdf"
+                width="100%"
+                height="500px">
+        </iframe>
+    </section>
+
+    <!-- YouTube -->
+    <section>
+        <h2>YouTube Video</h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-W_nFlIAWFM?si=wkqI7XbocsDol5tQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Google Maps -->
+    <section id="map">
+        <h2>Our Location</h2>
+
+        <iframe src="https://www.google.com/maps?q=Ooty,Nilgiris,Tamil+Nadu&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Wanderlust Nature Blog</p>
+    </footer>
+
+</body>
+
+</html>
